@@ -121,6 +121,37 @@ body {
     text-align: justify;
 }
 
+#about #cards,
+.container #cards {
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 20px 0 10px;
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 20px;
+    border-bottom-left-radius: 10px;
+    color: var(--color2);
+}
+
+.container #cards {
+    padding: 7px 32px;
+}
+
+#about #cards:hover,
+.container #cards:hover {
+    color: rgb(18, 18, 206);
+}
+
+#about #cards img {
+    height: 45px;
+}
+
 #character-image {
     height: 100vh;
     width: 100%;
