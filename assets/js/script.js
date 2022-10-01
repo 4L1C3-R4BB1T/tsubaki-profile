@@ -8,6 +8,9 @@ cards.map((card, index) => {
     cardItem.querySelector('.card-img-top').src = card.img;
     cardItem.querySelector('.card-img-top').alt = card.name;
     cardItem.querySelector('.card-title').innerHTML = card.name;
+    cardItem.querySelector('.original-character').src  = card.original;
+    cardItem.querySelector('.original-character').alt  = card.name;
+    cardItem.querySelector('.original-character').title  = card.nameOriginal;
 
     let active = false;
 
@@ -19,11 +22,6 @@ cards.map((card, index) => {
         });
     } else {
         cardItem.querySelector('.switch').style.display = 'none';
-    }
-
-    if (card.rarity === 6) {
-        cardItem.querySelector('.card-title').style.color = 'darkblue';
-        cardItem.querySelector('.card-title').style.border = 'solid 1px black';
     }
 
     getElement('.cards-area ').append(cardItem);

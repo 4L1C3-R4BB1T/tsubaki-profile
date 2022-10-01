@@ -155,7 +155,7 @@ body {
 
 .container #link img {
     margin-right: 10px;
-    height: 30px;
+    height: 25px;
 }
 
 #character-image {
@@ -228,10 +228,21 @@ body {
     }
 }
 
-
 /* cards */
 .models {
     display: none;
+}
+
+.card-item {
+    position: relative;
+}
+
+.original-character {
+    top: 11px;
+    left: 10px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid var(--color2);
 }
 
 .card {
@@ -240,7 +251,6 @@ body {
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--light);
-    
 }
 
 .card .card-img-top {
@@ -254,9 +264,9 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    margin: 0 10px 50px 0;
+    margin: 0 10px 60px 0;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--color3);
     border-radius: 6px;
 }
 
@@ -267,7 +277,9 @@ body {
 }
 
 .card .card-body h5 {
+    margin-top: 5px;
     font-size: 18px;
+    color: darkblue;
 }
 
 .cards-area {
