@@ -16,7 +16,7 @@ body {
     background: linear-gradient(var(--color1), var(--color5));
 }
 
-.container {
+.container-profile {
     height: 100vh
 }
 
