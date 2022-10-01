@@ -13,10 +13,11 @@
 }
 
 body {
-    min-height: 725px;
-    min-width: 1536px;
-    max-width: 1536px;
     background: linear-gradient(var(--color1), var(--color5));
+}
+
+.container {
+    height: 100vh
 }
 
 .container-info {
@@ -140,7 +141,7 @@ body {
 }
 
 .container #link {
-    padding: 7px 32px;
+    padding: 7px 15px;
 }
 
 #about #link:hover,
@@ -150,6 +151,11 @@ body {
 
 #about #link img {
     height: 45px;
+}
+
+.container #link img {
+    margin-right: 10px;
+    height: 30px;
 }
 
 #character-image {
@@ -238,9 +244,20 @@ body {
 }
 
 .card .card-img-top {
-    width: 100%;
+    width: 110%;
     height: 50%;
     object-fit: cover;
+}
+
+.card .switch {
+    height: 45px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 50px 0;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6px;
 }
 
 .card .card-body {
